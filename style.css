@@ -57,7 +57,7 @@ body{
 
 .hero__image__container{
     width:100%;
-    position:relative;
+    
     
 }
 
@@ -65,19 +65,40 @@ body{
     width:100%;
     border-radius: 8px;
     box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
-    position:absolute;
+    
     
 }
-.hero__bg__svg{
-    position:absolute;
-    
-    width:100%;
 
-}
 .hero__text{
     font-size: 30px;
     margin: 20px 0;
   
+}
+
+.explore__menu__text{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.food__card{
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.foor__card__image__container{
+    width: 100%;
+}
+
+.food__image{
+    width: 100%;
+    border-radius: 8px 8px 0  0;
+}
+
+.food__card__description{
+    padding: 15px;
 }
 
 @media (min-width: 768px){
@@ -85,11 +106,52 @@ body{
        justify-content:space-between;
        padding:10px 30px;
    } 
+
    .hero__container{
        margin-top: 20px;
        display: flex;
        flex-direction: row-reverse;
        align-items: center;
+   }
+
+   .explore__menu__lists{
+       display: flex;
+       gap: 15px;
+       margin-top: 40px;
+       padding: 0 30px;
+   }
+   
+   #pizza__card{
+       margin-top: -20px;
+       margin-bottom: 30px;
+   }
+
+   .explore__menu__view__more{
+       display: flex;
+       justify-content: center;
+
+   }
+
+   .explore__menu__container{
+       position: relative;
+      
+       
+   }
+
+   .explore__menu__gradient__bg{
+       position:absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    transform: skewY(-5deg);
+    z-index: -3;
    }
 }
 
@@ -97,18 +159,30 @@ body{
     .container{
         max-width: 900px;
     }
+
     .navbar__brand{
         width:150px;
     }
+
     .button__primary{
         padding:20px;
         font-size:20px;
     }
+
     .hero__description{
         width: 100%;
     }
+
     .hero__text{
         font-size: 50px;
+    }
+
+    .explore__menu__text{
+        font-size: 50px;
+    }
+
+    .explore__menu__lists{
+        gap: 30px;
     }
 }
 
